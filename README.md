@@ -12,6 +12,7 @@ https://gist.github.com/kabinpokhrel/6fd1275603e9d5f1e284be717cbd1bff
 
 
 Instala Python.
+<img src="cmd.png" alt="Logo" width="200"/>
 
 Ejecuta los ejemplos mostrados con anterioridad.
 Publica en GitHub los ejemplos llevados a cabo. Los ejemplos se acompañaran con capturas de pantalla en las que se muestre su funcionamiento.
