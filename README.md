@@ -15,4 +15,6 @@ Instala Python.
 <img src="cmd.png" alt="Logo" width="200"/>
 
 Ejecuta los ejemplos mostrados con anterioridad.
+<img src="vscode.png" alt="Logo" width="200"/>
 Publica en GitHub los ejemplos llevados a cabo. Los ejemplos se acompañaran con capturas de pantalla en las que se muestre su funcionamiento.
+<img src="web.png" alt="Logo" width="200"/>
