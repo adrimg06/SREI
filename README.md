@@ -49,8 +49,19 @@ La capa que almacena el puerto es la de transporte ya que se encarga de identifi
 La capa a la que corresponde la dirección ip es la de red, es decir, la de red ya que se encarga del enrutamiento y también de identificar los dispositivos que se conecten a la red.
 ¿Qué es three-way handshake?
 Es un Sistema mediante 3 pasos que usa el protocolo TCP para iniciar una conexión solida entre el cliente y el servidor.
+------------------------------------------------------------------------------------------
+Actividad 0.4 - Usando cUrl
+https://curl.se/docs/manual.html
 
+Busca información sobre el comando curl y muestra al menos cinco ejemplos de uso
 
+El curl se conoce como una herramienta de la línea de comandos para transferir datos servidores usando los protocolos HTTP, HTTPS, FPT. Su sintaxis es (curl [opciones] [URL])
+Ejemplos:
+curl ejem -Descargar contenido
+curl  -I ejem – Mostrar solo cabeceras
+curl -o ejem – Guardar un archivo
+curl -L ejem – Seguir redirecciones
+curl -v ejem – Mostrar cabeceras mas el cuerpo
 
 ------------------------------------------------------------------------------------------
 Actividad 0.5 - Práctica servidor web
