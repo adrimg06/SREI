@@ -1,5 +1,5 @@
 # SREI
-
+------------------------------------------------------------------------------------------
 Actividad 0.1 - HTTP Introduction
 https://www.youtube.com/watch?v=eesqK59rhGA
 https://www.youtube.com/watch?v=DuSURHrZG6I
@@ -32,9 +32,27 @@ Se escribe “telnet nombre_del_servidor  80”
 Telnet seria el comando que vamos a utilizar.
 La siguiente parte es la URL con cual queremos establecer la conexión.
 El 80 es el puerto para el http ya que el https no funciona por que va cifrado.
+------------------------------------------------------------------------------------------
+Actividad 2:
+
+¿Diferencias entre udp y tcp? (min 2:46 y 4:15)
+La principal diferencia es que TCP es confiable ya que esta diseñado para dar una conexión la cual asegura entrega y orden, esto hace que sea más lento. En cambio, el UPD es todo lo contrario al TCP,  siendo más rápido e ideal para los videojuegos y los video en directo (streaming)
+¿Qué aplicaciones usan tcp?  http, smtp, pop, imap, ssh
+	En cuanto el servicio https/https lo mas común que se utilicen las navegaciones web. El SMPT se utiliza para el envío de los correos electrónicos como puede ser Gmail. POP/IMAC pueden entra en la misma categoría ya que se encargan de la entrega del correo electrónico y por último el SSH se utiliza para el acceso remoto a los servidores.
+
+¿Qué aplicaciones usan udp?
+Como he comentado antes, este protocolo lo suelen utilizar aplicaciones que necesiten una buena velocidad de entrega como pueden ser los streaming de videos, videollamadas, videojuegos entre otros más.
+
+¿Qué capa almacena el puerto?
+La capa que almacena el puerto es la de transporte ya que se encarga de identificar aplicaciones y servicios del dispositivo.
+¿Qué capa almacena la dirección IP?
+La capa a la que corresponde la dirección ip es la de red, es decir, la de red ya que se encarga del enrutamiento y también de identificar los dispositivos que se conecten a la red.
+¿Qué es three-way handshake?
+Es un Sistema mediante 3 pasos que usa el protocolo TCP para iniciar una conexión solida entre el cliente y el servidor.
 
 
 
+------------------------------------------------------------------------------------------
 Actividad 0.5 - Práctica servidor web
 Visita los siguientes enlaces:
 Simple web server (ejemplo 1)
