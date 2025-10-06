@@ -88,3 +88,124 @@ Ejecuta los ejemplos mostrados con anterioridad.<br>
 Publica en GitHub los ejemplos llevados a cabo. Los ejemplos se acompañaran con capturas de pantalla en las que se muestre su funcionamiento.<br>
 <br>
 <img src="web.png" alt="Logo" width="200"/>
+
+
+Para instalar apache devemos de hacer lo siguiente:
+Hacemos un update e instalamos apache:
+<img width="702" height="292" alt="image" src="https://github.com/user-attachments/assets/5858383d-301c-454a-b9c9-efc041c86d68" />
+
+<img width="886" height="363" alt="image" src="https://github.com/user-attachments/assets/38e52fc5-5521-4022-a994-42489743cc93" />
+
+
+
+Una vez que este instalado para poder enumerarlos le escribimos el siguiente comando:
+ <img width="670" height="114" alt="image" src="https://github.com/user-attachments/assets/4e65d192-f7dd-4617-bc1d-d8e95b06c7d1" />
+
+Después para que el tráfico este únicamente en el puerto 80 haremos lo siguiente:
+ <img width="886" height="35" alt="image" src="https://github.com/user-attachments/assets/ca73b67d-5058-4d3c-8518-7b061c8dac82" />
+
+Para comprobar que se han aplicado los cambios correctamente hacemos un status:
+ 
+<img width="886" height="96" alt="image" src="https://github.com/user-attachments/assets/e1a7bd78-f38d-487b-a100-1b7f0b11f210" />
+
+
+Nos aparece que esta inactivo por lo que hay que levantarlo de la siguiente forma:
+ 
+<img width="886" height="269" alt="image" src="https://github.com/user-attachments/assets/4f6c0faf-4384-49d8-896f-147ba51ab17f" />
+
+Una vez que este activo al poner el locaclhost nos saldrá lo siguiente:
+ <img width="886" height="492" alt="image" src="https://github.com/user-attachments/assets/65725284-f5f2-4c78-9519-04cece355620" />
+
+
+Para ver la dirección ip del servidor hay que utilizar el siguiente comando:
+ <img width="886" height="64" alt="image" src="https://github.com/user-attachments/assets/4fbcb272-5aef-4e91-b0b3-aa2173adbefc" />
+
+Para cambiarle la url lo haremos con el siguiente comando:
+ 
+
+<img width="886" height="23" alt="image" src="https://github.com/user-attachments/assets/2778f80b-997b-4f0c-9e7f-be314dbc93fc" />
+
+
+
+
+
+
+
+Instalación mysql-server
+
+Para instalar hacemos un sudo apt de la siguiente forma:
+ 
+<img width="886" height="149" alt="image" src="https://github.com/user-attachments/assets/66a38d47-f5f1-43f5-a39a-21868722fff6" />
+
+Cuando la instalación se complete, se recomienda ejecutar una secuencia de comandos de seguridad que viene preinstalada en MySQL Con esta secuencia de comandos se eliminarán algunos ajustes predeterminados poco seguros y se bloqueará el acceso a su sistema de base de datos. Inicie la secuencia de comandos interactiva ejecutando lo siguiente:
+ 
+<img width="886" height="248" alt="image" src="https://github.com/user-attachments/assets/c267ed7e-5df2-4f12-a747-de5861364d36" />
+
+Para establecer la fuerza de la contraseña será la siguiente:
+ <img width="886" height="141" alt="image" src="https://github.com/user-attachments/assets/5f21d565-f2e5-4b78-b8e5-225908ed7dd5" />
+
+
+En la siguiente ventana nos pregunta que si queremos eliminar usuarios anónimos, le damos a que si:  
+<img width="886" height="188" alt="image" src="https://github.com/user-attachments/assets/23b2fc67-18ba-410d-baa2-05d90624a90f" />
+
+Para entrar dentro del servicio ponemos el comando siguiente:
+ <img width="886" height="285" alt="image" src="https://github.com/user-attachments/assets/455f074a-089d-4682-a1ab-4494241bfe0a" />
+
+
+Para salir ponemos exit : 
+ <img width="886" height="161" alt="image" src="https://github.com/user-attachments/assets/00397d6f-967a-4f5a-b35f-97fc2ea3d4a1" />
+
+
+Instalación php:
+
+Para instalar php ponemos el siguiente comando:
+ <img width="886" height="40" alt="image" src="https://github.com/user-attachments/assets/b24633ac-f48f-405d-af24-09a9a3fa7f1a" />
+
+Para ver nuestra versión de PHP ponemos el siguiente comando:
+ <img width="859" height="39" alt="image" src="https://github.com/user-attachments/assets/5c801356-7d04-443f-bfbd-14ea0827c4cf" />
+
+Aquí tenemos la versión:
+ <img width="886" height="97" alt="image" src="https://github.com/user-attachments/assets/e3dd6898-0a8d-4022-bcdf-e47df9739981" />
+
+Creamos el directorio para nuestro dominio de la siguiente manera:
+ <img width="886" height="40" alt="image" src="https://github.com/user-attachments/assets/0a9b9d24-7bcd-476e-8920-1ac10b90dd90" />
+
+
+Ahora le pondremos propiedades de usuario al servicio PHP de la siguiente manera:
+ 
+<img width="886" height="48" alt="image" src="https://github.com/user-attachments/assets/a7739a07-445a-49e7-a476-28c67397e035" />
+
+Se nos creara un archivo el cual lo abriremos con un nano:
+ <img width="886" height="23" alt="image" src="https://github.com/user-attachments/assets/d2190187-b585-44bb-b010-93c26495f876" />
+
+Una vez que estemos dentro del nano ponemos esta configuración básica:
+ 
+<img width="886" height="315" alt="image" src="https://github.com/user-attachments/assets/fef65eaa-0f8c-494a-9fed-4e78ee60f68f" />
+
+Ahora hacemos un a2ensite para habilitar el host virtual:
+ 
+<img width="886" height="95" alt="image" src="https://github.com/user-attachments/assets/5dcf0990-c787-479c-a717-4874d04c01ed" />
+
+Para desactivar el html por defecto de apache pondremos lo siguiente:
+ <img width="886" height="102" alt="image" src="https://github.com/user-attachments/assets/96b98359-9012-4820-acc0-06d3f7b0a379" />
+
+Para asegurarnos de que no tiene errores ejecutaremos lo siguiente:
+ 
+<img width="886" height="54" alt="image" src="https://github.com/user-attachments/assets/ab0e4bcc-8a0b-4eac-81b1-1e3d99a910bf" />
+
+Para poder cargar apache tenemos que hacer el siguiente systemctl:
+ <img width="886" height="31" alt="image" src="https://github.com/user-attachments/assets/bffe4271-cc3d-4132-9f63-dae67658e3af" />
+
+En el siguiente apartado crearemos un html para sustituir el que teníamos antes por defecto de apache:
+ 
+<img width="886" height="37" alt="image" src="https://github.com/user-attachments/assets/b53b6c26-46f0-4ba9-a7a9-d2699306bbd4" />
+
+
+
+Por último podemos ver que ya nos muestra por defecto el html:
+<img width="886" height="496" alt="image" src="https://github.com/user-attachments/assets/5436ae1c-0a51-461a-a3e1-98d321378264" />
+
+ 
+
+
+
