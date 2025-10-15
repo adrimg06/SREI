@@ -205,7 +205,111 @@ En el siguiente apartado crearemos un html para sustituir el que teníamos antes
 Por último podemos ver que ya nos muestra por defecto el html:
 <img width="886" height="496" alt="image" src="https://github.com/user-attachments/assets/5436ae1c-0a51-461a-a3e1-98d321378264" />
 
+
+
+
+Actividad #2.1
+ Para empezar vamos a cambiar el puerto de escucha el cual lo haremos con el siguiente comando:
+    <img width="886" height="91" alt="image" src="https://github.com/user-attachments/assets/4b721198-c980-4e5b-8b3b-8e131c6f2730" />
+
+Añadimos esta línea a continuación:
+<img width="886" height="401" alt="image" src="https://github.com/user-attachments/assets/fe16c7df-d34f-4112-a7c7-9b8ead59b662" />
+
+después pasaremos a editar el virtual host el cual podremos acceder de la siguiente forma:
+<img width="886" height="31" alt="image" src="https://github.com/user-attachments/assets/999d331b-1f89-46e7-9dc0-ae0e45a3d0aa" />
+
+Una vez aquí cambiamos la primera línea por el 81:
+<img width="886" height="234" alt="image" src="https://github.com/user-attachments/assets/453c43fd-ca35-4b9a-b656-39826ad1c8aa" />
+
+Reiniciamos apache:
+<img width="886" height="28" alt="image" src="https://github.com/user-attachments/assets/f7077c3c-7c26-425a-b48b-19133e6040e9" />
+después le añadimos el dominio de la siguiente forma:
+ <img width="886" height="37" alt="image" src="https://github.com/user-attachments/assets/760e57b8-f08a-4aa1-9010-ee560315972a" />
+
+Le ponemos el dominio de la marisma:
+ <img width="886" height="234" alt="image" src="https://github.com/user-attachments/assets/a930994d-6124-43c8-a239-35c553339e70" />
+
+
+Después pasamos a cambiar la directiva Server Tokens:
+Vamos a editar la configuración de seguridad de la siguiente forma:
+ <img width="886" height="25" alt="image" src="https://github.com/user-attachments/assets/44c457d9-6b80-446b-a7bd-063b7ea6ea51" />
+
+Una vez dentro cambiamos esta línea :
+<img width="886" height="88" alt="image" src="https://github.com/user-attachments/assets/6fbdbf93-1ab3-4e41-8a67-b42becd06b26" />
+
+
+Por esto para que se muestre con el nombre del producto:
+ <img width="886" height="232" alt="image" src="https://github.com/user-attachments/assets/2927c70f-2c8e-4aa4-a23d-5e39f0b08175" />
+
+Activamos la configuración por si acaso no está activada:
+ <img width="886" height="35" alt="image" src="https://github.com/user-attachments/assets/0f13eb9f-9bd0-40d3-88fa-bbe48aa4f2f7" />
+
+Para cambiar ServerSignature debemos hacer lo siguiente, utilizamos el comando anterior y buscamos los siguiente:
+ <img width="886" height="25" alt="image" src="https://github.com/user-attachments/assets/7b777742-f515-480e-ad06-68b0c31d2a38" />
+
+
+
+Buscamos lo siguiente:
+ <img width="434" height="148" alt="image" src="https://github.com/user-attachments/assets/a2d29354-d379-4262-a71e-027d505af93f" />
+
+Lo cambiamos por lo siguiente:
+ <img width="886" height="185" alt="image" src="https://github.com/user-attachments/assets/731a816e-a52c-4b69-9ce2-5b2b98d5597a" />
+
+Reiniciamos apache:
+ <img width="886" height="31" alt="image" src="https://github.com/user-attachments/assets/c0f5bea0-219c-4971-af16-6dbacde04fa9" />
+
+Crear directorios “prueba” y “prueba2” con páginas
+Lo haremos de la siguiente forma:
+ <img width="886" height="33" alt="image" src="https://github.com/user-attachments/assets/a65aa7fd-ff39-4065-9139-bc1216f049de" />
+<img width="886" height="30" alt="image" src="https://github.com/user-attachments/assets/16b1bbfa-90f2-4469-81a3-5a5f8b380962" />
+
  
+Añadimos algún contenido:
+ <img width="886" height="141" alt="image" src="https://github.com/user-attachments/assets/e9d61643-c985-47f3-b28b-6624a732083d" />
+
+Redirecciona todo el contenido de “prueba” a “prueba2”
+Editamos el virtual host:
+ <img width="886" height="19" alt="image" src="https://github.com/user-attachments/assets/f9346ee4-82cd-40f8-ae85-0eadd5c21dad" />
+
+Dentro del virtual host añadimos lo siguiente:  
+<img width="715" height="270" alt="image" src="https://github.com/user-attachments/assets/937a394a-fc49-4e5d-907f-101a88f8f7b7" />
+
+Redirigir solo una página específica
+Creamos la página destino:
+ <img width="886" height="19" alt="image" src="https://github.com/user-attachments/assets/634645e0-789d-458f-9f5f-95ef3a2e5206" />
+
+después hacemos lo mismo en el virtual host:
+ 
+<img width="855" height="33" alt="image" src="https://github.com/user-attachments/assets/bc084729-4c40-4e02-b5ac-19ec9eb57988" />
+
+Usar la directiva userdir:
+Para ello debemos de habilitar el modulo de la siguiente forma:
+ <img width="886" height="39" alt="image" src="https://github.com/user-attachments/assets/e668dfba-3cae-4d5c-853a-35e2b3cf9877" />
+
+Para editar la configuración de modulo nos devemos ir adonde esta ubicado el userdir.conf:
+ <img width="886" height="26" alt="image" src="https://github.com/user-attachments/assets/27e966ec-35db-4dc4-9b6f-792295fd45c6" />
 
 
+Creamos la carpeta para el usuario de la siguiente forma y reiniciamos apache:
+ <img width="886" height="60" alt="image" src="https://github.com/user-attachments/assets/984221a4-43dd-485d-b73d-129dd0d66936" />
+
+
+Usar la directiva Alias para redirigir a una carpeta en tu directorio de usuario:
+Volvemos a editar el archivo de configuración :
+ <img width="886" height="19" alt="image" src="https://github.com/user-attachments/assets/5ed2e225-8bf3-448d-bec4-54e9c797f6ca" />
+
+
+Dentro de virtualhost añadimos esto:
+ <img width="886" height="192" alt="image" src="https://github.com/user-attachments/assets/c3708af0-05bd-4002-bd29-85204c506658" />
+
+Creamos la carpeta y un archivo:
+ <img width="886" height="55" alt="image" src="https://github.com/user-attachments/assets/fcef0460-4eb6-45c0-8d46-642cd6e30762" />
+
+Directiva Options: ¿qué hace y cómo desactivar el listado de directorios?
+Nos metemos otra vez en el virtual host y buscamos lo siguiente:
+ <img width="886" height="170" alt="image" src="https://github.com/user-attachments/assets/adfe23d6-53a3-4aa8-968f-31a0f7ab070b" />
+
+
+Lo cambiamos por lo siguiente y reiniciamos apache:
+ <img width="786" height="178" alt="image" src="https://github.com/user-attachments/assets/fb436fe6-077d-4864-a735-bc8423a35683" />
 
