@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ "$#" -ne 2 ]; then
+    echo "Uso: $0 <IP> <dominio>"
+    exit 1
+fi
+
+IP="$1"
+DOM="$2"
+HOSTS="/etc/hosts"
+
+	if grep -q "^[^#]*[[:space:]]$DOM$" "$HOSTS" 2>/dev/null; then
+    		echo "El dominio '$DOM' ya existe en hosts."
+	else
+    		echo "$IP    $DOM" >> "$HOSTS"
+    		echo "Dominio '$DOM' añadido con IP $IP."
+fi

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+    echo "Uso: $0 <puerto>"
+    exit 1
+fi
+
+PUERTO="$1"
+ARCHIVO="/etc/apache2/ports.conf"
+
+	if grep -q "^Listen $PUERTO$" "$ARCHIVO" 2>/dev/null; then
+    		echo "El puerto $PUERTO ya está configurado."
+	else
+    		echo "Listen $PUERTO" >> "$ARCHIVO"
+    		echo "Puerto $PUERTO añadido."
+fi
