@@ -1,0 +1,27 @@
+#!/bin/bash
+
+read -p "Ingresa el título de la página: " titulo
+read -p "Ingresa el texto de la cabecera: " cabecera
+read -p "Ingresa el mensaje del cuerpo: " mensaje
+
+
+cat <<EOF > index.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>$titulo</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        header { background: #4CAF50; padding: 15px; color: white; font-size: 24px; }
+        p { font-size: 18px; }
+    </style>
+</head>
+<body>
+    <header>$cabecera</header>
+    <p>$mensaje</p>
+</body>
+</html>
+EOF
+
+echo "Página web creada: index.html"
