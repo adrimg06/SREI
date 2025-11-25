@@ -320,7 +320,7 @@ Le damos permisos de ejecución:
 
 Actividad#3- Directiva directory
 
-Primero creamos los directorios de la siguiente forma:
+Primero creamos los directorios de la siguiente forma: <br>
 <img width="582" height="45" alt="image" src="https://github.com/user-attachments/assets/c3c2cf78-9db8-4eba-b7f0-830b4b35a136" />
 Explica qué diferencia existe entre ambos y muestra su equivalencia con la directiva Require:
 
@@ -338,25 +338,25 @@ Allow from 192.168.1.100
 </Directory>
 
 Para dir1
-Entramos en el archivo de configuración con el siguiente comando:
+Entramos en el archivo de configuración con el siguiente comando:<br>
 <img width="582" height="72" alt="image" src="https://github.com/user-attachments/assets/efd3e1bd-848a-4077-b157-de8b2f49cadd" />
 
-Permite el acceso de las peticiones provenientes de 10.3.0.100
-<img width="340" height="48" alt="image" src="https://github.com/user-attachments/assets/46ea0106-a1ad-4c93-80b0-049b9e2dfd2f" />
-Permite el acceso desde "marisma.intranet"
-<img width="470" height="50" alt="image" src="https://github.com/user-attachments/assets/ba60bb4b-4c1a-4403-acfa-3c58feae584b" />
-Permite el acceso desde cualquier subdominio de "marisma.intranet"
-<img width="577" height="53" alt="image" src="https://github.com/user-attachments/assets/6a9ae6b6-8137-44ae-8149-d7308bad5774" />
+Permite el acceso de las peticiones provenientes de 10.3.0.100<br>
+<img width="340" height="48" alt="image" src="https://github.com/user-attachments/assets/46ea0106-a1ad-4c93-80b0-049b9e2dfd2f" /><br>
+Permite el acceso desde "marisma.intranet"<br>
+<img width="470" height="50" alt="image" src="https://github.com/user-attachments/assets/ba60bb4b-4c1a-4403-acfa-3c58feae584b" /><br>
+Permite el acceso desde cualquier subdominio de "marisma.intranet"<br>
+<img width="577" height="53" alt="image" src="https://github.com/user-attachments/assets/6a9ae6b6-8137-44ae-8149-d7308bad5774" /><br>
 ermite el acceso Pde las peticiones provenientes de "10.3.0.100" con máscara "255.255.0.0"
-<img width="501" height="51" alt="image" src="https://github.com/user-attachments/assets/a852a414-77ff-4123-b58a-f79b0bb68d79" />
+<img width="501" height="51" alt="image" src="https://github.com/user-attachments/assets/a852a414-77ff-4123-b58a-f79b0bb68d79" /><br>
 
-Quedaria asi:
+Quedaria asi:<br>
 <img width="682" height="289" alt="image" src="https://github.com/user-attachments/assets/7f5a59de-68b5-4775-bb92-64f39771fd7b" />
 
-Modifica la configuración de forma que el acceso a dir1:
-        1. Se permita a "marisma.intranet" y no se permita desde 10.3.0.101"
+Modifica la configuración de forma que el acceso a dir1:<br>
+        1. Se permita a "marisma.intranet" y no se permita desde 10.3.0.101"<br>
 		<img width="1016" height="320" alt="image" src="https://github.com/user-attachments/assets/bfc96c70-c940-4b48-b3d0-52527b2fa14a" />
-Modifica la configuración de forma que el acceso a dir2:
+Modifica la configuración de forma que el acceso a dir2:<br>
         1. Se permita a "10.3.0.100/8" y no a "marisma.intranet"
 <img width="330" height="146" alt="image" src="https://github.com/user-attachments/assets/d120d039-192c-4ea2-9cc9-61644ae638e2" />
 
