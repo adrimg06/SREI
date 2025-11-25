@@ -355,8 +355,52 @@ Quedaria asi:<br>
 
 Modifica la configuración de forma que el acceso a dir1:<br>
         1. Se permita a "marisma.intranet" y no se permita desde 10.3.0.101"<br>
-		<img width="1016" height="320" alt="image" src="https://github.com/user-attachments/assets/bfc96c70-c940-4b48-b3d0-52527b2fa14a" />
+		<img width="1016" height="320" alt="image" src="https://github.com/user-attachments/assets/bfc96c70-c940-4b48-b3d0-52527b2fa14a" /> <br>
 Modifica la configuración de forma que el acceso a dir2:<br>
-        1. Se permita a "10.3.0.100/8" y no a "marisma.intranet"
-<img width="330" height="146" alt="image" src="https://github.com/user-attachments/assets/d120d039-192c-4ea2-9cc9-61644ae638e2" />
+        1. Se permita a "10.3.0.100/8" y no a "marisma.intranet"<br>
+<img width="330" height="146" alt="image" src="https://github.com/user-attachments/assets/d120d039-192c-4ea2-9cc9-61644ae638e2" /><br>
+<br>
+
+Actividad #4
+1. Directorios en /www/ con 3 dígitos
+<img width="893" height="39" alt="image" src="https://github.com/user-attachments/assets/f4e6295f-330c-4418-b67c-0e02fc583b71" />
+2. Ficheros de imagen (*.gif, *.jpeg, *.jpg, *.png)
+<img width="820" height="38" alt="image" src="https://github.com/user-attachments/assets/67fe6fbe-1cae-40d5-a673-f9afe6e4e294" />
+El fichero de documentos nos debe de dar error:
+<img width="948" height="108" alt="image" src="https://github.com/user-attachments/assets/08ffe41f-83c6-4b5e-ae89-0d5bac79549f" />
+<br>
+2. Creamos un archivo con los siguientes datos dentro:
+ <img width="342" height="263" alt="image" src="https://github.com/user-attachments/assets/e580a275-fe17-4be1-a72a-26a63fdc0295" /> <br>
+ 1. Directorios en /www/ con 3 dígitos
+    <img width="905" height="84" alt="image" src="https://github.com/user-attachments/assets/5515959e-0ba2-4d59-82ea-e0eee664a90d" /> <br>
+	2. Ficheros de imagen (*.gif, *.jpeg, .jpg, .png)
+  <img width="666" height="85" alt="image" src="https://github.com/user-attachments/assets/60657f52-9fd9-4bc4-bcde-0032b53406bb" />
+  3. Números enteros y decimales
+     <img width="663" height="80" alt="image" src="https://github.com/user-attachments/assets/ec67f08c-bfc9-44f8-b923-8bea8c6a6e05" />
+
+4. Teléfonos formato americano
+<img width="675" height="98" alt="image" src="https://github.com/user-attachments/assets/560a93d7-ae45-43c6-bcc4-f3474348e2fc" />
+
+5. Palabras (letras)
+<img width="670" height="188" alt="image" src="https://github.com/user-attachments/assets/63a11f36-7155-40f0-9f7f-604b3ff6366a" />
+
+6. Códigos hexadecimales (Color)
+   <img width="664" height="58" alt="image" src="https://github.com/user-attachments/assets/403b3ee1-4dbd-42b7-9bd0-080d13852032" />
+
+7. Palabras de 4 letras
+<img width="660" height="116" alt="image" src="https://github.com/user-attachments/assets/8caab064-5dda-482f-9d1d-222bda367a36" />
+
+8. Número entero con signo
+   <img width="666" height="149" alt="image" src="https://github.com/user-attachments/assets/181788ee-513a-494b-96c0-44c3c0931776" />
+
+9. Números reales con exponente
+    <img width="663" height="152" alt="image" src="https://github.com/user-attachments/assets/c7fc9e91-a2a6-4d9a-8dfb-661294b594bc" />
+
+10. Email
+<img width="663" height="152" alt="image" src="https://github.com/user-attachments/assets/a686f253-d562-4499-ab14-9b14b5f2e6ab" />
+
+11. Números del 0 a 255
+<img width="662" height="78" alt="image" src="https://github.com/user-attachments/assets/42244e8c-3521-4a0d-9204-725a040aa200" />
+
+
 
