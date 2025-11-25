@@ -313,3 +313,9 @@ Nos metemos otra vez en el virtual host y buscamos lo siguiente:
 Lo cambiamos por lo siguiente y reiniciamos apache:
  <img width="786" height="178" alt="image" src="https://github.com/user-attachments/assets/fb436fe6-077d-4864-a735-bc8423a35683" />
 
+Y hacemos el ultimo script el cual nos permita crear una página web con un título, una cabecera y un mensaje:
+<img width="1221" height="687" alt="image" src="https://github.com/user-attachments/assets/d3ac6a7f-118d-416b-adbc-2d713cd8cb8c" />
+Le damos permisos de ejecución:
+<img width="708" height="52" alt="image" src="https://github.com/user-attachments/assets/cf733db2-84ba-4124-b6d5-3615d5dfe1b3" />
+
+
