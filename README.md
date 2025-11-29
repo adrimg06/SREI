@@ -486,4 +486,41 @@ modificamos el archivo /etc/host:
 
 <img width="360" height="57" alt="image" src="https://github.com/user-attachments/assets/826b7681-e1b9-4508-a6ce-215cca7dc778" />
 
+Actividad#9- Usuarios:
+
+Crea cinco usuarios: usuario1, usuario2, usuario3, usuario4, usuario5.
+
+<img width="637" height="71" alt="image" src="https://github.com/user-attachments/assets/f28cb9f8-7974-4a8d-afe0-22aceaa6a387" />
+
+Ahora le quitamos el -c para que no machaque el primer usuario:
+
+<img width="719" height="109" alt="image" src="https://github.com/user-attachments/assets/da56ff9a-a692-4918-afa8-e442e700dac4" />
+
+Crea dos grupos de usuarios, el primero formado por usuario1 y usuario2; y el segundo por el resto de usuarios.
+
+<img width="568" height="32" alt="image" src="https://github.com/user-attachments/assets/0fd3adfe-9128-4372-8b4d-da2edf1bbee9" />
+
+<img width="342" height="60" alt="image" src="https://github.com/user-attachments/assets/c6c09f74-2d34-40ce-89a9-db2e7bed6bf6" />
+
+Crea un directorio llamado privado1 que permita el acceso a todos los usuarios.
+
+<img width="555" height="32" alt="image" src="https://github.com/user-attachments/assets/25d26ae4-1495-4f72-967c-7cd278e51631" />
+
+Dentro de los archivos de configuracion ponemos:
+
+<img width="309" height="93" alt="image" src="https://github.com/user-attachments/assets/81ec2dbb-2f72-46a5-b861-0d9e00247a8d" />
+
+Crea un directorio llamado privado2 que permita el acceso sólo a los usuarios del grupo1.
+
+<img width="561" height="28" alt="image" src="https://github.com/user-attachments/assets/61a0ac94-5e41-40e8-b857-c2d63166f755" />
+
+Hacemos lo mismo que en el apartado anterior:
+
+<img width="435" height="91" alt="image" src="https://github.com/user-attachments/assets/e53104b3-0d1b-4fd8-adba-4342acbd7426" />
+
+En el directorio privado2 haz que sólo sea accesible desde el localhost, y estudia cómo se comporta la autorización si ponemos: satisfy any, satisfy all
+
+En el fichero de configuración le añadimos esto al directorio 2:
+
+<img width="424" height="183" alt="image" src="https://github.com/user-attachments/assets/17347ad5-1619-4656-a18a-2b2d1c94df3e" />
 
