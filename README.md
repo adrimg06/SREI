@@ -402,5 +402,25 @@ El fichero de documentos nos debe de dar error:
 11. Números del 0 a 255
 <img width="662" height="78" alt="image" src="https://github.com/user-attachments/assets/42244e8c-3521-4a0d-9204-725a040aa200" />
 
+Actividad#7- Reescritura
+
+Consta de 5 ejemplos que son los siguientes:
+
+Rescribir la url:
+<img width="330" height="92" alt="image" src="https://github.com/user-attachments/assets/63919089-6227-4d18-b1f5-bb0a8300ff8c" />
+
+Cambiar la extensión de los ficheros:
+<img width="304" height="96" alt="image" src="https://github.com/user-attachments/assets/977e5b5b-a70d-4772-9790-ff35851e7028" />
+
+Crear URL amigables:
+<img width="523" height="91" alt="image" src="https://github.com/user-attachments/assets/4a8aff2f-f8f6-4b82-b6c5-dcb1d721d726" />
+
+Acortar URL: 
+<img width="526" height="114" alt="image" src="https://github.com/user-attachments/assets/a998c067-887f-4bd2-9388-f441a83824ec" />
+
+Uso del RewriteCond:
+<img width="571" height="120" alt="image" src="https://github.com/user-attachments/assets/95aed955-0f89-4f69-a95c-dcff7e76dadf" />
+
+
 
 
