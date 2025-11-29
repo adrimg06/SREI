@@ -410,60 +410,80 @@ Rescribir la url:
 <img width="330" height="92" alt="image" src="https://github.com/user-attachments/assets/63919089-6227-4d18-b1f5-bb0a8300ff8c" />
 
 Cambiar la extensión de los ficheros:
+
 <img width="304" height="96" alt="image" src="https://github.com/user-attachments/assets/977e5b5b-a70d-4772-9790-ff35851e7028" />
 
 Crear URL amigables:
+
 <img width="523" height="91" alt="image" src="https://github.com/user-attachments/assets/4a8aff2f-f8f6-4b82-b6c5-dcb1d721d726" />
 
 Acortar URL: 
+
 <img width="526" height="114" alt="image" src="https://github.com/user-attachments/assets/a998c067-887f-4bd2-9388-f441a83824ec" />
 
 Uso del RewriteCond:
+
 <img width="571" height="120" alt="image" src="https://github.com/user-attachments/assets/95aed955-0f89-4f69-a95c-dcff7e76dadf" />
 
 
 Actividad#8 – Virtualhost
 
 Creamos la estructura de directorios de la siguiente forma dentro de /var/www:
+
 <img width="756" height="85" alt="image" src="https://github.com/user-attachments/assets/e57b2d90-0546-402d-8e72-65e6a9d23982" />
 
 Le damos permisos con el chown -R a las dos rutas:
+
 <img width="855" height="39" alt="image" src="https://github.com/user-attachments/assets/c5926ca5-a053-4c95-a79e-428310c908e9" />
+
 <img width="808" height="41" alt="image" src="https://github.com/user-attachments/assets/249e7d00-c7a3-4c04-b66a-cd06fb0e18d3" />
 
 Ponemos los permisos de escritura para todos:
+
 <img width="792" height="48" alt="image" src="https://github.com/user-attachments/assets/91f283ac-1827-4108-a4b8-fef9f6c39b3a" />
 
 Creamos el primer archivo html de la siguiente forma:
+
 <img width="770" height="35" alt="image" src="https://github.com/user-attachments/assets/852b4a28-4108-42f9-b833-50026bb54f83" />
 
 metemos dentro lo siguiente:
+
 <img width="1232" height="290" alt="image" src="https://github.com/user-attachments/assets/c5a51adb-e566-492b-9dfa-5dafdc206fb0" />
 
 Hacemos lo mismo para el segundo:
+
 <img width="1174" height="225" alt="image" src="https://github.com/user-attachments/assets/0e477219-f4b3-43d5-ada0-93ea111c782b" />
 
 Creamos los archivos de configuración de la siguiente forma:
+
 <img width="1160" height="126" alt="image" src="https://github.com/user-attachments/assets/34e7bdc5-6330-490e-a4cf-b40353e89d0e" />
 
 Creamos el el fichero ahora:
+
 <img width="1057" height="67" alt="image" src="https://github.com/user-attachments/assets/e36e4bd1-e0e0-4166-abd2-e1e1f76ff20e" />
 
 añadimos lo siguiente:
+
 <img width="1210" height="656" alt="image" src="https://github.com/user-attachments/assets/20189f3b-d629-4564-bba9-e6ac88cb65a1" />
 
 Hacemos lo mismo con el segundo:
+
 <img width="1154" height="74" alt="image" src="https://github.com/user-attachments/assets/2982a381-d441-4aa7-a9fa-be6980498d10" />
+
 <img width="1124" height="274" alt="image" src="https://github.com/user-attachments/assets/1ca306c3-1baf-4ec7-b7e2-2e0d3875e86d" />
 
 Habilitamos los nuevos archivos de virtual host:
+
 <img width="510" height="48" alt="image" src="https://github.com/user-attachments/assets/d09de8c8-3ff1-4eb1-9d1d-9965067d2cda" />
+
 <img width="540" height="48" alt="image" src="https://github.com/user-attachments/assets/91d78940-0706-4294-ace4-55a2281e12e5" />
 
 Lo activamos haciendo un restart:
+
 <img width="479" height="40" alt="image" src="https://github.com/user-attachments/assets/ed579365-4154-49b3-85ae-52ed8e62123b" />
 
 modificamos el archivo /etc/host:
+
 <img width="360" height="57" alt="image" src="https://github.com/user-attachments/assets/826b7681-e1b9-4508-a6ce-215cca7dc778" />
 
 
