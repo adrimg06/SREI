@@ -595,6 +595,205 @@ Lo comprobamos:
 <img width="941" height="1032" alt="image" src="https://github.com/user-attachments/assets/726d6fe3-c2ca-41e9-b705-6f5f9515fbfd" />
 
 
+<h1>Practica Primer trimestre ignacio Práctica Primer Trimestre - Servidores Web </h1>
+
+Para realizar este trabajo empezamos de un punto de partida de Ubuntu 25.01 la cual es la última versión que hay de este sistema operativo, para empezar, haremos un update y un upgrade de la siguiente forma: 
+
+<img width="839" height="458" alt="image" src="https://github.com/user-attachments/assets/5f72fc82-340a-4d30-812b-59675fef517f" />
+
+1.- Dominios mediante el archivo hosts. 
+Siguiendo las rubricas de la práctica tenemos que crear 3 host los cuales son los siguientes dominios: 
+
+Centro.intranet  
+
+Departamentos.centro.intranet 
+
+Servidor2.centro.intranet - Para el servidor de Nginx 
+
+Nos metemos en el archivo de configuración de los host, entramos con el siguiente comnado- sudo nano /etc/hosts: 
+
+<img width="836" height="153" alt="image" src="https://github.com/user-attachments/assets/81f43506-7d14-4bf6-8235-705534d1c385" />
+
+Para ver que este todo correcto le hacemos un ping a uno de los dominios que hemos creado para ver si se ha aplicado correctamente: 
+
+<img width="842" height="261" alt="image" src="https://github.com/user-attachments/assets/74edafeb-d4f1-4a42-8520-77e95944df64" />
+
+Instalamos apache,MYSQL y PHP a la misma vez con el siguiente comando- sudo apt install apache2 mysql-server php libapache2-mod-php php-mysql php-gd php-xml php-mbstring –y : 
+
+<img width="841" height="269" alt="image" src="https://github.com/user-attachments/assets/75f657e1-887d-43f1-9ee9-e137048747e5" />
+
+Una vez instalado el apache encendemos el apache2: 
+
+<img width="839" height="72" alt="image" src="https://github.com/user-attachments/assets/ac72c79f-0cc0-4e82-a1d7-bcedfa29dcc9" />
+
+Ahora comprobamos el estado: 
+
+<img width="842" height="301" alt="image" src="https://github.com/user-attachments/assets/9c69e92d-7170-4309-887d-00888c49b14d" />
+
+Una vez después de comprobarlo ya quedaría instalando la pila LAMP 
+
+3.- Instalación y Configuración de WordPress 
+
+Utilizaremos el dominio centro. Intranet será el que utilizaremos para el WordPress. Lo primero que vamos a hacer es crear la base de datos con el comando que dejare abajo. Entramos a la base de datos de la siguiente forma: 
+
+<img width="831" height="183" alt="image" src="https://github.com/user-attachments/assets/8a8cf1ff-0e29-4b99-b1f3-ef188213be97" />
+
+Ponemos el comando mencionado arriba, ya está creado:
+
+<img width="841" height="257" alt="image" src="https://github.com/user-attachments/assets/92c792db-e427-493c-a1c8-c977d2c18754" />
+
+Descargamos al WordPress con el siguiente enlace:
+
+<img width="839" height="120" alt="image" src="https://github.com/user-attachments/assets/41dbd8fe-b5d7-4cb0-a12e-58f8ee5ac8fc" />
+
+Una vez instalado lo descomprimimos y procedemos a darles permisos: 
+
+<img width="936" height="156" alt="image" src="https://github.com/user-attachments/assets/91c96444-b87f-48a4-a257-699a932df788" />
+
+Creamos el archivo de configuración para el VirtualHost de la siguiente forma: 
+
+<img width="843" height="313" alt="image" src="https://github.com/user-attachments/assets/8bc1dffc-e387-4a76-ade0-666781557187" />
+
+Centro.conf tiene este documentroot para que funcione: 
+
+<img width="842" height="177" alt="image" src="https://github.com/user-attachments/assets/73beca32-3eb2-4aa5-88f6-db1d97d925d8" />
+
+Habilitamos el sitio: 
+
+<img width="841" height="79" alt="image" src="https://github.com/user-attachments/assets/9f3b744a-3d84-4078-a014-19307391748a" />
+
+Le hacemos un restart:
+
+<img width="838" height="57" alt="image" src="https://github.com/user-attachments/assets/b0f910b7-5b95-4bbc-9e53-1f95cc18b0fb" />
+
+Como podemos ver funciona correctamente: 
+
+<img width="839" height="521" alt="image" src="https://github.com/user-attachments/assets/426025d0-63cc-4b05-b9db-0226b7fcab58" />
+
+para terminar, ponemos la siguiente configuración: 
+
+<img width="814" height="504" alt="image" src="https://github.com/user-attachments/assets/eedd0043-2ae8-4f2c-b7d2-4beb84413c4c" />
+
+Rellenamos los siguientes campos: 
+
+<img width="839" height="526" alt="image" src="https://github.com/user-attachments/assets/ddc8ae49-b125-461c-8547-52c847b81bd0" />
+
+Como podemos ver ya estaría instalado:
+
+<img width="838" height="454" alt="image" src="https://github.com/user-attachments/assets/514cba32-09ba-4036-b626-3bf0dd7c0370" />
+
+4.- Aplicación Python con WSGI 
+
+Para Python utilizaremos el dominio departamentos.centro.intranet la cual lo instalaremos de la siguiente forma: 
+
+<img width="780" height="397" alt="image" src="https://github.com/user-attachments/assets/c49e345b-3483-42f7-9190-498101d7d457" />
+
+Creamos el directorio 
+
+<img width="846" height="52" alt="image" src="https://github.com/user-attachments/assets/b3bd0ed6-1eca-4e74-8728-5f426005d209" />
+
+Dentro de el creamos el archivo app.py:
+
+<img width="828" height="243" alt="image" src="https://github.com/user-attachments/assets/6d656cea-75ca-475a-8d68-726e5915dfce" />
+
+Modificamos el virtualhost con lo siguiente: 
+
+<img width="838" height="337" alt="image" src="https://github.com/user-attachments/assets/0ebcc8f0-1e03-48b6-b558-0aab064489c5" />
+
+Como podemos ver ya se nos muestra en el cliente lo siguiente:
+
+<img width="843" height="193" alt="image" src="https://github.com/user-attachments/assets/ae39e00d-d691-4930-997d-5ea2ef762b59" />
+
+5.- Proteger Python con Autenticación
+
+Primero crearemos el usuario de la siguiente forma: 
+
+<img width="840" height="53" alt="image" src="https://github.com/user-attachments/assets/96c30f9e-9e40-4b1c-bb4e-098518468b2c" />
+
+Nos pedirá una contraseña:
+
+<img width="830" height="119" alt="image" src="https://github.com/user-attachments/assets/5e41eb07-32b1-43c4-b6a1-8eb774f081b5" />
+
+Ahora modificamos el archivo de configuración de la siguiente forma, cambiando el riquire all por valid-user:
+
+<img width="646" height="266" alt="image" src="https://github.com/user-attachments/assets/81a921eb-d823-48b5-a764-e6d4cf6887ea" />
+
+Aqui tenemos el usuario de autentificación:
+
+<img width="843" height="245" alt="image" src="https://github.com/user-attachments/assets/14690a09-303c-41f4-b4dd-14c6a4978fd0" />
+
+6.- Instalar y Configurar AWStats 
+
+Ahora instalaremos awstats mediante el siguiente repositorio: 
+
+<img width="840" height="297" alt="image" src="https://github.com/user-attachments/assets/c438640e-a72e-4e94-b69e-400d1f341592" />
+
+lo configuramos para el centro.intranet copiando la configuración: 
+
+<img width="848" height="37" alt="image" src="https://github.com/user-attachments/assets/50379c63-d047-4b32-b228-db0b41e1e59f" />
+
+Nos metemos dentro de la configuración para cambiar las siguientes líneas: 
+
+<img width="882" height="209" alt="image" src="https://github.com/user-attachments/assets/d268d95a-e13c-4cbe-a267-6ba8f4b13d38" />
+
+Guardamos lo anterior y habilitamos el cgi en apache: 
+
+<img width="839" height="194" alt="image" src="https://github.com/user-attachments/assets/c14d180f-8b20-4061-8dac-1adf9b9c457b" />
+
+El último paso seria generar las estadísticas iniciales con el siguiente comando: 
+
+<img width="843" height="30" alt="image" src="https://github.com/user-attachments/assets/ce0dbefe-5f95-48db-ad16-2336284cac97" />
+
+posteriormente lo comprobamos:
+
+<img width="845" height="322" alt="image" src="https://github.com/user-attachments/assets/68a74993-846d-412a-b544-aebd6ff57194" />
+
+7.- NGINX y PHPMyAdmin 
+Al instalar nginx nos va a dar interferencias con apache, lo que vamos a hacer es cambiar el pueto por defecto para que no pase este suceso: 
+
+Primero lo instalaremos: 
+
+<img width="751" height="54" alt="image" src="https://github.com/user-attachments/assets/c9033999-2f3a-49fe-bc99-6a33d562fe53" />
+
+Para solucionar el problema que he comentado anteriormente tenemos que hacer lo siguiente: 
+
+<img width="842" height="46" alt="image" src="https://github.com/user-attachments/assets/f0329681-5f8b-40b3-9dfa-3efc082e2aba" />
+
+Editamos las líneas de los puertos para poner las correctas: 
+
+<img width="839" height="243" alt="image" src="https://github.com/user-attachments/assets/b958d661-a76a-481c-9792-0928a781e602" />
+
+<img width="832" height="712" alt="image" src="https://github.com/user-attachments/assets/61675ab7-3341-4a15-bda6-5a8630ea8e56" />
+
+Hacemos un restart:
+
+<img width="703" height="81" alt="image" src="https://github.com/user-attachments/assets/de3b438a-3226-4862-b8ea-8b12723e24a4" />
+
+Hacemos un estatus: 
+
+<img width="782" height="201" alt="image" src="https://github.com/user-attachments/assets/2e69d6e2-f3df-4568-b5df-cf3ea1723a29" />
+
+Pasamos a instalar phpmyadmin de la siguiente manera:
+
+<img width="776" height="229" alt="image" src="https://github.com/user-attachments/assets/061dc8eb-f508-46bd-b6d6-bf8bb49d61a1" />
+
+Le ponemos contraseña: 
+
+<img width="771" height="164" alt="image" src="https://github.com/user-attachments/assets/a3c895fc-f9e2-4874-9e95-f13820a9a464" />
+
+En esta opción no marcamos niguna y le damos a siguiente: 
+
+<img width="784" height="221" alt="image" src="https://github.com/user-attachments/assets/2be14326-6dd0-4d54-8175-00774e98a757" />
+
+na vez instalado le damos a vinculamos nginx mediante este enlace simbólico: 
+
+<img width="781" height="25" alt="image" src="https://github.com/user-attachments/assets/a6614dbe-ae30-4bee-b40b-513d545530d1" />
+
+La comprobación, http://servidor2.centro.intranet:8080/phpmyadmin : 
+
+<img width="786" height="376" alt="image" src="https://github.com/user-attachments/assets/30aa68c9-6f5e-4a9d-8cbc-daf1f4e71758" />
+
+
 
 
 
