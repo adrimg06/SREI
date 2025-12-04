@@ -524,3 +524,77 @@ En el fichero de configuración le añadimos esto al directorio 2:
 
 <img width="424" height="183" alt="image" src="https://github.com/user-attachments/assets/17347ad5-1619-4656-a18a-2b2d1c94df3e" />
 
+
+Actividad#10-SSL
+  Primero para entrar tenemos que acceder con el enlace que nos ha proporcionado Ignacio – dirigirnos hacia el laboratorio y levantar la instancia, una vez que este en verde pinchamos en ella:
+  
+  Una vez dentro hacemos un update y un upgrade:
+
+  <img width="883" height="243" alt="image" src="https://github.com/user-attachments/assets/e2af0fa2-2314-427f-9b3f-4d5209ca28ba" />
+
+Instalamos apache:
+
+<img width="1334" height="175" alt="image" src="https://github.com/user-attachments/assets/d8ccaa9c-fc87-4de5-aa52-ecc4e0d1ccf6" />
+
+  Pasamos a la creación de el certificado automático:
+
+<img width="1918" height="556" alt="image" src="https://github.com/user-attachments/assets/92225b26-b0ae-40a8-bcdb-07683c671987" />
+
+Para consultar la información del certificado se haría con el siguiente comando:
+
+<img width="1223" height="57" alt="image" src="https://github.com/user-attachments/assets/83bcbb21-96ba-4717-98b2-9369b182f06d" />
+
+Para saber la fecha de caducidad lo haríamos de la siguiente forma:
+
+<img width="946" height="73" alt="image" src="https://github.com/user-attachments/assets/82be112d-9ccf-4934-ab94-2c749756b602" />
+
+Para la configuración de un VirtualHost con SSL/TSL en el server web apache nos metemos en la ruta de los archivos de configuración de SSL:
+
+<img width="774" height="38" alt="image" src="https://github.com/user-attachments/assets/203c2863-55b4-4559-bd4f-8a6bb73b234a" />
+
+cambiamos la ruta por defecto del ssl a esta:
+
+<img width="802" height="187" alt="image" src="https://github.com/user-attachments/assets/f40548c7-a155-457c-94e7-2164a69ad8fa" />
+
+Después habilitamos los archivos de configuración del ssl y hacemos un enmod del ssl:
+
+<img width="1919" height="400" alt="image" src="https://github.com/user-attachments/assets/292ac569-a41b-4d1b-a1c0-c71b1acb8779" />
+
+Configuramos el virtualHost de http para que se redirija todo el trafico al https yendo a la siguiente ruta:
+
+<img width="778" height="42" alt="image" src="https://github.com/user-attachments/assets/a780d8f6-d97f-4263-ae81-424ff3eb3f62" />
+
+<img width="917" height="282" alt="image" src="https://github.com/user-attachments/assets/b4cba110-3ad1-4f7e-9a7f-50fcacfe139e" />
+
+activamos el modulo rewrite  y reiniciamos apache para que se efectúen los cambios:
+
+<img width="1525" height="190" alt="image" src="https://github.com/user-attachments/assets/6930bd83-3846-48fa-8f85-75483cbe5b59" />
+
+Para comprobarlo lo hacemos con un curl:
+
+<img width="683" height="207" alt="image" src="https://github.com/user-attachments/assets/48f59cdd-cfc2-451f-b258-3d40768f7f4c" />
+
+Una vez hecho lo anterior nos dirigimos a Certbot para tener un certificado valido y que nos navegadores no marquen como peligroso:
+
+
+<img width="653" height="700" alt="image" src="https://github.com/user-attachments/assets/5c0fbd15-9e86-410b-96e5-b731dc394028" />
+
+Pasamos a la consola e instalamos certbot:
+
+<img width="1883" height="246" alt="image" src="https://github.com/user-attachments/assets/6884e9ca-d3c0-435c-b83c-9a6b3509ff7a" />
+
+Posteriormente solicitamos un certificado con certbot a apache:
+
+<img width="720" height="109" alt="image" src="https://github.com/user-attachments/assets/aaa5be7c-ae5f-44ae-a603-fd090193e3f1" />
+
+Una vez que terminemos la configuración no saldrá lo siguiente:
+
+<img width="1787" height="675" alt="image" src="https://github.com/user-attachments/assets/7f3c1b5d-af8f-4dd5-b0fb-11c2dafc32b9" />
+
+Lo comprobamos:
+<img width="941" height="1032" alt="image" src="https://github.com/user-attachments/assets/726d6fe3-c2ca-41e9-b705-6f5f9515fbfd" />
+
+
+
+
+
