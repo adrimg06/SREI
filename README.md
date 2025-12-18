@@ -794,6 +794,149 @@ La comprobación, http://servidor2.centro.intranet:8080/phpmyadmin :
 <img width="786" height="376" alt="image" src="https://github.com/user-attachments/assets/30aa68c9-6f5e-4a9d-8cbc-daf1f4e71758" />
 
 
+# Instalación de Wordpress en instancia Debian(o Ubuntu) EC2 con soporte de base de datos RDS y EFS 
+
+Primero creamos la VPC: 
+
+<img width="604" height="262" alt="image" src="https://github.com/user-attachments/assets/3b0b15ca-62d8-4f16-a257-b498f80ff2bf" />
+
+Personalizamos las zonas de disponibilidad poniendo la a y la b: 
+
+<img width="382" height="259" alt="image" src="https://github.com/user-attachments/assets/c93eb081-d465-43fc-b22a-2bc8decf1761" />
+
+Ponemos dos subredes privadas y otras dos publicas: 
+
+<img width="299" height="331" alt="image" src="https://github.com/user-attachments/assets/aed22dc9-5c55-430e-a077-9f89a82e6461" />
+
+El nat  y los puntos de enlace lo dejaremos en ninguna: 
+
+<img width="504" height="458" alt="image" src="https://github.com/user-attachments/assets/89c0c727-9712-476b-a7d0-f2418f65c624" />
 
 
+Aqui podemos ver que se creó correctamente: 
 
+<img width="605" height="248" alt="image" src="https://github.com/user-attachments/assets/523f1551-dd25-4cd8-ac0b-4fb644ce9139" />
+
+Cuando le damos a ver Vpc si deslizamos un poco para abajo podemos ver el mapa de recursos: 
+
+<img width="604" height="191" alt="image" src="https://github.com/user-attachments/assets/933437d8-ea3a-47d8-8f75-bde4619b4498" />
+
+
+Ahora pasaremos a crear la instancia en la primera subred publica con las siguinetes características: 
+
+<img width="603" height="220" alt="image" src="https://github.com/user-attachments/assets/0a1c1b55-f366-400b-bb40-f171aface05f" />
+
+En las configuraciones de red seleccionamos la vpc que hemos creado poniendo la primera publica, habilitamos la ip publica:
+
+<img width="604" height="167" alt="image" src="https://github.com/user-attachments/assets/2e64452b-eb9b-4d6c-8a83-336115c029d6" />
+
+Hacemos esto en el grupo de seguridad:
+
+<img width="604" height="426" alt="image" src="https://github.com/user-attachments/assets/34513c56-4c7d-4e39-a90e-59b247a1e030" />
+
+Aquí podemos ver que se hizo todo correctamente: 
+
+<img width="601" height="421" alt="image" src="https://github.com/user-attachments/assets/0e8744de-0680-4199-9be9-9f8ae5fee711" />
+
+Nos conectamos por ssh:
+
+<img width="601" height="190" alt="image" src="https://github.com/user-attachments/assets/00012fd9-0210-44fb-bea1-0c29bc185b9b" />
+
+3. Apache y PHP
+
+<img width="595" height="196" alt="image" src="https://github.com/user-attachments/assets/04053370-f5e1-4c0d-a985-856ddfca546c" />
+
+Lo iniciamos y lo habilitamos: 
+
+<img width="602" height="48" alt="image" src="https://github.com/user-attachments/assets/37060109-8587-4226-a9ad-35e937129c78" />
+
+
+Comprobamos que funciona poniendo la ip publica en el navegador: 
+
+<img width="599" height="314" alt="image" src="https://github.com/user-attachments/assets/91ca3fa9-be4a-4d91-b13e-878223af37ca" />
+
+Una vez instalado apache instalaremos php con el siguiente comando: 
+
+<img width="602" height="36" alt="image" src="https://github.com/user-attachments/assets/8004c163-8111-42a5-a30a-f47e386e830b" />
+
+Hacemos un php –v para ver si se ha instalado y su version: 
+
+<img width="601" height="75" alt="image" src="https://github.com/user-attachments/assets/760eb54b-ae21-405c-a912-dbed1228907c" />
+
+Una vez hecho lo anterior instalamos mysql, y después comprobamos que este dentro de los módulos php: 
+
+<img width="601" height="47" alt="image" src="https://github.com/user-attachments/assets/1a7ee469-1fea-4ca4-8855-59d504a12775" />
+
+Verificamos que este activo y que este funcionando:
+
+<img width="490" height="87" alt="image" src="https://github.com/user-attachments/assets/c55dc0ca-18ac-4330-905f-d2ecc97c0a3b" />
+
+4. Creación de la base de datos.	 
+Ahora para cerrar la base de datos nos debemos ir a aws y nos dirigimos hacia el apartado de RDS y la creamos (tipo SQL):
+
+<img width="410" height="194" alt="image" src="https://github.com/user-attachments/assets/4a4d092b-238b-4f21-892b-aea0dc55a7e2" />
+
+Le ponemos el nombre y una contraseña maestra: 
+
+<img width="603" height="241" alt="image" src="https://github.com/user-attachments/assets/369039f8-b373-4924-b49d-6dc8fb678cdd" />
+
+Esta configuración la dejamos igual, es decir, la dejamos como esta: 
+
+<img width="601" height="133" alt="image" src="https://github.com/user-attachments/assets/c2141760-5e49-49d8-82d0-a8764c650931" />
+
+Lo mismo con el almacenamiento:  
+
+<img width="603" height="115" alt="image" src="https://github.com/user-attachments/assets/2bdeb892-ca74-425e-a886-bd154fdd8bfa" />
+
+En conectividad ponemos nuestra vpc: 
+
+<img width="603" height="173" alt="image" src="https://github.com/user-attachments/assets/e8d98c74-395a-4d6b-953d-36029fc47f00" />
+
+Creamos un nuevo grupo de seguridad: 
+
+<img width="600" height="204" alt="image" src="https://github.com/user-attachments/assets/6ac6cba2-2fe0-4f7a-8c75-376408d4ec9b" />
+
+En la configuración adicional ponemos lo siguiente: 
+
+<img width="603" height="219" alt="image" src="https://github.com/user-attachments/assets/c277a1f1-49e6-496b-9426-43becc8e9187" />
+
+Aqui podemos ver que se ha creado:
+
+<img width="602" height="148" alt="image" src="https://github.com/user-attachments/assets/2dc6b6de-0265-47b7-8bdb-674caa40d712" />
+
+Una vez que comprobemos que está bien instalada procederemos a la conexión con nuestra instancia y con el asistente de RDS nos proporciona. El solo establecerá los permisos necesarios sin complicaciones: 
+
+<img width="604" height="236" alt="image" src="https://github.com/user-attachments/assets/d4c6a391-601e-45fb-86d4-a8877522ec48" />
+
+Le damos a conectar: 
+
+<img width="601" height="192" alt="image" src="https://github.com/user-attachments/assets/89a96798-63e5-4e57-a148-8c8299c4faec" />
+
+5. Elastic File System.
+Nos dirigimos a la partición EFS para crear un sistema de almacenamiento externo que conectaremos a la instancia y posteriormente nos conectaremos a WordPress.
+
+<img width="588" height="604" alt="image" src="https://github.com/user-attachments/assets/36c47264-7e22-424e-acc4-a716e388058b" />
+
+Comprobamos que estén bien creados: 
+
+<img width="599" height="130" alt="image" src="https://github.com/user-attachments/assets/bc8e0c32-f092-4a92-bdc7-0d0d6f6b82ab" />
+
+Nos vamos a los grupos de seguridad de la instancia en EC2 y permitimos el acceso al EFS:
+
+<img width="605" height="185" alt="image" src="https://github.com/user-attachments/assets/6629dee1-88da-47ee-b573-d06122b6ea3e" />
+
+Añadimos las reglas efs: 
+
+<img width="600" height="183" alt="image" src="https://github.com/user-attachments/assets/99abdb03-bf12-42ff-b2dc-a0631d643613" />
+
+Procedemos a montarlo mediante SSH:
+
+<img width="600" height="32" alt="image" src="https://github.com/user-attachments/assets/1fa768b8-7e8a-4c0b-b770-1ce424f6e147" />
+
+Hacemos la comprobación: 
+
+	 
+
+ 
+
+6. Descarga de Wordpress 
