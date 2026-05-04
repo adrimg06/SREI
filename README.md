@@ -2,7 +2,7 @@
 ------------------------------------------------------------------------------------------
 ## Actividades
 
-- [Actividad 5 – DNS](./Actividad%205%20–%20DNS.md)
+- [Actividad 5 – DNS](./Actividad%205%20–%20DNS.m)
 - [DNS Activity #6 - Master DNS](./DNS%20Activity%236%20-%20Master%20DNS.md)
 - [Activity #8 Subdominios](./Activity%238%20Subdominios.md)
 - [Actividad Final SRI](./actividad_final_SRI.md)
